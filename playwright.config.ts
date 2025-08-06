@@ -12,7 +12,7 @@ export default defineConfig({
   use: {
     headless: false,
     viewport: { width: 1280, height: 720 },
-    trace: 'on-first-retry',
+    trace: 'on',
   },
 
   projects: [

@@ -7,6 +7,7 @@
 
 ## 📁 Estructura del Proyecto Propuesto (GitHub)
 
+```
 legal-scraper/
 ├── README.md
 ├── package.json
@@ -23,6 +24,7 @@ legal-scraper/
 ├── scripts/
 │   └── convert_html_to_markdown.py
 └── .venv/ (opcional, ignorado por git)
+```
 
 ## 📋 Instalación y Dependencias
 
@@ -46,7 +48,7 @@ pip install beautifulsoup4
 - Markdown limpio en `markdown-files/`
 - Listado temporal en `policies/html_index.json`
 - Configuración lista para correr con:
-  - `npx playwright test tests/scrape-html.spec.ts`
+  - `npx playwright test playwright-automation/scrape-html.spec.ts`
   - `python3 scripts/convert_html_to_markdown.py`
 
 

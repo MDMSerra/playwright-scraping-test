@@ -1,18 +1,34 @@
 [
   {
-    "name": "walmart_privacy_notice",
-    "url": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice"
+    "name": "walmart_marketplace_t_and_cs",
+    "url": "https://corporate.walmart.com/terms-of-use"
   },
   {
-    "name": "walmart_terms_of_use",
-    "url":"https://corporate.walmart.com/terms-of-use"
+    "name": "walmart_marketplace_global_marketplace_seller_privacy_notice",
+    "url": "https://corporate.walmart.com/privacy-security/walmart-marketplace-seller-privacy-notice"
   },
   {
-    "name": "xai_terms_of_service",
-    "url": "https://x.ai/legal/terms-of-service"
+    "name": "walmart_marketplace_solution_provider_privacy_notice",
+    "url": "https://corporate.walmart.com/privacy-security/walmart-marketplace-solution-provider-privacy-notice"
   },
-    {
-    "name": "xai_privacy_policy",
-    "url": "https://x.ai/legal/privacy-policy"
+  {
+    "name": "x_ai_grok_consumer_terms_of_service",
+    "url": "https://x.ai/terms-of-service"
+  },
+  {
+    "name": "x_ai_grok_enterprise_terms_of_service",
+    "url": "https://x.ai/legal/enterprise/terms-of-service"
+  },
+  {
+    "name": "x_ai_grok_x_purchaser_terms_of_service",
+    "url": "https://legal.x.com/en/purchaser-terms.html"
+  },
+  {
+    "name": "x_ai_grok_privacy_policy",
+    "url": "https://x.ai/privacy-policy"
+  },
+  {
+    "name": "x_ai_grok_acceptable_use_and_moderation_policy",
+    "url": "https://x.ai/legal/acceptable-use-policy"
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "walmart_privacy_notice",
+    "url": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice"
+  },
+  {
+    "name": "walmart_terms_of_use",
+    "url":"https://corporate.walmart.com/terms-of-use"
+  },
+  {
+    "name": "xai_terms_of_service",
+    "url": "https://x.ai/legal/terms-of-service"
+  },
+    {
+    "name": "xai_privacy_policy",
+    "url": "https://x.ai/legal/privacy-policy"
+  }
+]

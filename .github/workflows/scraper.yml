@@ -1,0 +1,48 @@
+name: Legal Scraper Automation
+
+on:
+  push:
+    branches: [ main ]
+    schedule:
+    - cron: '0 0 * * *' # 9 PM Argentina = 00:00 UTC
+  workflow_dispatch:
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm ci
+          npx playwright install --with-deps
+
+      - name: Run Playwright test
+        run: npx playwright test playwright-automation/scrape-html.spec.ts
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4
+
+      - name: Run HTML to Markdown conversion
+        run: python3 scripts/convert_html_to_markdown.py
+
+      - name: Upload markdown files as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: markdown-files
+          path: markdown-files/

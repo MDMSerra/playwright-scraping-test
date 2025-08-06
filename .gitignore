@@ -1,0 +1,16 @@
+.vscode/
+.venv
+.venv/
+__pycache__/
+*.pyc
+
+html-scrap/*.html
+markdown-files/*.md
+policies/html_index.json
+
+node_modules/
+/test-results/
+*.log
+/playwright-report/
+/blob-report/
+/playwright/.cache/
